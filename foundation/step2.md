@@ -35,21 +35,48 @@ ENTRYPOINT ["/bin/bash"]
 File
 ```{{execute}}
 
-Build the docker image and tag it `mypyspark`: `docker build . -t mypyspark`
+Build the docker image and tag it `mypyspark`: 
+```
+docker build . -t mypyspark
+```{{execute}}
 
 Verify again the docker images by: `docker images`{{execute}}
 
-## Create docker-compose file
+Now there's a new docker image named `mypyspark` with tag `latest`. You should see output like this:  
+```
+$ docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+mypyspark                  latest              2f55e3a13ec4        15 seconds ago      2.01GB
+amazoncorretto             8                   1bf2504e87fa        9 hours ago         346MB
+...
+``
+
+## Create docker-compose file  
+
+This basic docker-compose file is doing the following:
+* it runs a single container, based on the image we just builded
+* there's 1 port mapping, that will map the container port 4040, to localhost 80. Doing that we will be able to view the spark History page
+* there's 1 volume mapping, to push some a single file named `raw_tweets.txt` to the container under the name: `raw_tweets.json`
+
+
 ```
 cat <<composeFile > docker-compose.yml
 version: '2.1'
 services:
     pyspark:
+        name: mypyspark
         image: mypyspark
         ports:
             - "80:4040"
         tty: true
         volumes:
-        - ../raw_tweets.txt:/opt/raw_tweets.json
+        - raw_tweets.txt:/opt/raw_tweets.json
 composeFile
 ```{{execute}}
+  
+  
+Let's start what's defined in the docker-compose file in detachmed mode:
+```
+docker-compose up -d
+```{{execute}}
+
