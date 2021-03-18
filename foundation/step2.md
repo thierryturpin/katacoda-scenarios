@@ -49,7 +49,7 @@ REPOSITORY                 TAG                 IMAGE ID            CREATED      
 mypyspark                  latest              2f55e3a13ec4        15 seconds ago      2.01GB
 amazoncorretto             8                   1bf2504e87fa        9 hours ago         346MB
 ...
-``
+```
 
 ## Create docker-compose file  
 
