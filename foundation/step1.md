@@ -12,7 +12,7 @@ And verify the installation by executing: `docker info`{{execute}}
 
 Install docker-compose
 ```
-sudo apt install docker-compose
+sudo apt install docker-compose -y
 ```{{execute}}
 
 And verigy the installtion by executing: `docker-compose -info`{{execute}}

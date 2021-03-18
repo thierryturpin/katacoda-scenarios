@@ -32,7 +32,7 @@ RUN pip3 install pyspark
 RUN python3 -c "import numpy as np"
 
 ENTRYPOINT ["/bin/bash"]
-Dockerfile
+File
 ```{{execute}}
 
 Build the docker image and tag it `mypyspark`: `docker build . -t mypyspark`
