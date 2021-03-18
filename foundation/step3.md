@@ -23,7 +23,7 @@ The PySpark process is a native Linux process! There's no hidden virtual machine
 
 Now you can also see the SparkHistory, by doing: "View HTTP port 80 on Host 1", this will open a web-page like this:
 
-![spark_history.png](../assets/spark_history.png)
+![SparkHistory](./assets/spark_history.png)
 
 ## Reading json file content into a Spark Dataframe
 From inside the Pyspark shell: 
