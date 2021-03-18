@@ -1,4 +1,4 @@
-# Build docker image and create compose file
+# Step 2
   
 ## Docker and Docker file  
 
@@ -92,7 +92,8 @@ Now we can start a bash shell inside the container with the command:
 docker exec -it mypyspark bash
 ```{{execute}}
 
-You can see the docker containers run information by doing:
+
+Create a second terminal, you can see the docker containers run information by doing:
 ```
 docker ps
 ```{{execute}}

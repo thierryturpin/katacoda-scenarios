@@ -1,4 +1,4 @@
-# Get Docker and docker-compose
+# Step 1
 
 We are running on Ubuntu, see: `cat /etc/*release*`{{execute}}  
 
