@@ -64,13 +64,13 @@ cat <<composeFile > docker-compose.yml
 version: '2.1'
 services:
     pyspark:
-        name: mypyspark
+        container_name: mypyspark
         image: mypyspark
         ports:
             - "80:4040"
         tty: true
         volumes:
-        - raw_tweets.txt:/opt/raw_tweets.json
+        - ./raw_tweets.txt:/opt/raw_tweets.json
 composeFile
 ```{{execute}}
   
@@ -80,3 +80,7 @@ Let's start what's defined in the docker-compose file in detachmed mode:
 docker-compose up -d
 ```{{execute}}
 
+Now we can start a bash shell inside the container with the command:
+```
+docker exec -it mypyspark bash
+```{{execute}}
