@@ -1,17 +1,21 @@
 {
-  "title": "sparkInDocker",
-  "description": "run your fist spark workload under docker",
-  "difficulty": "Beginner!",
+  "title": "Spark inside Docker hands-on",
+  "description": "run your fist Spark workload under docker",
+  "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Get Docker and docker-compose",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Build docker image and create compose file",
         "text": "step2.md"
+      },
+      {
+        "title": "PySpark in action",
+        "text": "step3.md"
       }
     ],
     "intro": {
