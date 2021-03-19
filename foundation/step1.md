@@ -15,6 +15,6 @@ Install docker-compose
 sudo apt install docker-compose -y
 ```{{execute}}
 
-And verigy the installtion by executing: `docker-compose -info`{{execute}}
+And verify the installtion by executing: `docker-compose -info`{{execute}}
 
 Check the currently installed docker images: `docker images`{{execute}}
