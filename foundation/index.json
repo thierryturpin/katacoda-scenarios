@@ -1,6 +1,6 @@
 {
   "title": "Spark inside Docker hands-on",
-  "description": "run your fist Spark workload under docker",
+  "description": "run your first Spark workload under docker",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
