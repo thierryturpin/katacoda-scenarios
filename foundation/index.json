@@ -1,6 +1,6 @@
 {
-  "title": "Spark inside Docker hands-on",
-  "description": "run your first Spark workload under docker",
+  "title": "Spark inside Docker and on EMR hands-on",
+  "description": "run your first Spark workload under docker and deploy Spark jobs to EMR",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
@@ -18,7 +18,7 @@
         "text": "step3.md"
       },
       {
-        "title": "Clone the GitHub repo",
+        "title": "Clone the GitHub repo, make your changes, push and trigger the pipeline",
         "text": "step4.md"
       }
     ],
