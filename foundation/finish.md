@@ -1,1 +1,1 @@
-Wonderful let's run Spark on EMR now
+ALL done!

@@ -16,6 +16,10 @@
       {
         "title": "PySpark in action",
         "text": "step3.md"
+      },
+      {
+        "title": "Clone the GitHub repo",
+        "text": "step4.md"
       }
     ],
     "intro": {
