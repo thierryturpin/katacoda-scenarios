@@ -2,7 +2,7 @@
 
 Clone the repository, credentials will be shared via Teams chat  
 ```
-git clone https://github.com/MicropoleBelgium/WUK/tree/qual
+git clone https://github.com/MicropoleBelgium/WUK.git
 ```{{execute}}
 
 ```
@@ -14,6 +14,12 @@ git checkout origin/qual
 Set your username ( replace <<>> )  
 ```
 myuser=<<>>
+```
+
+Set your git user name and e-mail 
+```
+git config --global user.email 'myuser@micropole.be'
+git config --global user.name '$myuser'
 ```
 
 Create a new branch from the currrent qual branch   
