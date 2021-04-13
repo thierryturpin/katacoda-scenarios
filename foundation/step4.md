@@ -20,7 +20,7 @@ Set your git user name and e-mail
 ```
 git config --global user.email 'myuser@micropole.be'
 git config --global user.name '$myuser'
-```
+```{{execute}}
 
 Create a new branch from the currrent qual branch   
 ```
