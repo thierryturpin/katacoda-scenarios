@@ -11,15 +11,19 @@ git branch -a
 git checkout origin/qual
 ```{{execute}}
 
-Set your username ( replace <<>> )  
+Provide your user name int the prompt
 ```
-myuser=<<>>
+read myuser
+```{{execute}}
+
 ```
+echo "you have set: $myuser for username"
+```{{execute}}
 
 Set your git user name and e-mail 
 ```
-git config --global user.email 'myuser@micropole.be'
-git config --global user.name '$myuser'
+git config --global user.email $myuser@micropole.be
+git config --global user.name $myuser
 ```{{execute}}
 
 Create a new branch from the currrent qual branch   
@@ -39,7 +43,7 @@ Edit the funtcion: `persist_results` so that the variable `parquet_file` include
 
 Commit your changes:
 ```
-git commit -m 'Updated my script csv_to_parquet_$myuser.py so that s3 file include my name'
+git commit -m "Updated my script csv_to_parquet_$myuser.py so that s3 file include my name"
 ```{{execute}}
 
 Push your changes:
